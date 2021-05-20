@@ -36,12 +36,12 @@ const questions = () => {
         {
             name: 'installation',
             type: 'input', 
-            message: 'Please enter installation directions',
+            message: 'Please enter installation directions.',
             validate: input => {
                 if (input) {
                     return true;
                 } else {
-                    console.log('installation directions are required');
+                    console.log('installation directions are required.');
                     return false;
                 }
             }
@@ -62,7 +62,7 @@ const questions = () => {
         },
         {
             name: 'license',
-            type: 'checckbox',
+            type: 'checkbox',
             message: 'What type of license is used?',
             choices: ['MIT', 'Apache', 'PD/CC0', 'MPL', 'GPL','AGPL', 'other'],
             validate: input => {
@@ -141,10 +141,38 @@ const questions = () => {
 };
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName,data,err => {
+        if (err) {
+            throw new Error(err);
+            // console.log(err);
+            return;
+        }
+        console.log(`
+        README.md has been created! See it here => ${fileName}`);
+    });
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    console.log(`
+
+    README.md GENERATOR`
+    
+    );
+    questions()
+    .then(answers => {
+        return generateMarkdown(answers);
+    })
+    .then(dataToWrite => {
+        writeToFile('./dist/README.md', dataToWrite);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+};
 
 // Function call to initialize app
 init();
+
+
