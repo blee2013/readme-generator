@@ -1,33 +1,42 @@
-# Professional README Generator Starter Code
+# ReadMe-Generator
 
-[How to create a Professional README](./readme-guide.md)
+## Description 
+Thiss application prompts you to answer a series of questions and then generates a README.md once completed. 
 
-GIVEN a command-line application that accepts user input
 
-WHEN I am prompted for information about my application repository
+## Table of Contents (Optional)
 
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+If your README is very long, add a table of contents to make it easy for users to find what they need.
 
-WHEN I enter my project title
+* [Installation](#installation)
+* [Technology Used](#technology-used)
+* [Application](#application)
+* [Contact Information](#contact-information)
 
-THEN this is displayed as the title of the README
 
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
+## Installation
 
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+* node index.js
+* The README.md that you create will show up in '.dist/README.md'
 
-WHEN I choose a license for my application from a list of options
 
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+## Technology Used
 
-WHEN I enter my GitHub username
+* JavaScript (ES6)
+* Inquirer
+* Node.js
 
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
+## Application
 
-WHEN I enter my email address
 
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 
-WHEN I click on the links in the Table of Contents
+## Contact Information
 
-THEN I am taken to the corresponding section of the README
+Brittany's contacts:
+
+Email: (BLee@BrittanyLeeConsulting.com)
+
+Github: (https://github.com/blee2013)
+
+LinkedIn: (https://www.linkedin.com/in//brittany-lee-6142121b8/)
+
